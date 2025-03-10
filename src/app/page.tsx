@@ -12,6 +12,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
 
 
 export default function Home() {
@@ -20,7 +29,21 @@ export default function Home() {
       <section className=" container mx-auto text-center pb-20 px-4 md:px-0">
         <nav className="flex justify-between items-center py-4">
           <Image src={logo} alt="logo-LivroSaaS" />
-          <MenuIcon size={20} className='md:hidden cursor-pointer'/>
+          
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <MenuIcon size={20} className='md:hidden cursor-pointer'/>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className='mr-4'>
+              <DropdownMenuLabel>Menu</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Funcionamento</DropdownMenuItem>
+              <DropdownMenuItem>Preço</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Button variant={"bg-white"} >Login</Button>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <div className=" items-center gap-2 hidden md:flex">
             <Button variant={'link'}>Funcionamento</Button>
             <Button variant={'link'}>Preço</Button>
