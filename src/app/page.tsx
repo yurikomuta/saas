@@ -59,7 +59,7 @@ export default function Home() {
         <h2 className="text-5xl font-bold mt-16 pb-20">Preço Simples e Transparente</h2>
         <p className='text-gray-500 text-xl max-w-3xl mx-auto '>Pra que inúmeros planos quando nós sabemos exatamente o que é melhor para você? Assine o nosso plano mensal Pro Premium VIP e garanta mensalmente um ebook novo de programação.É por menos de um café por dia.</p>
 
-      <Card className='w-[350] mx-auto text-left'>
+      <Card className='w-[350] mx-auto text-left mt-20'>
         <CardHeader>
           <CardTitle>Plano Pro Premium VIP</CardTitle>
           <CardDescription>Tudo que você precisa para seus estudos</CardDescription>
@@ -74,21 +74,21 @@ export default function Home() {
           </ul>
         </CardContent>
         <CardFooter>
-          <Button>Assine Agora</Button>
+          <Button className='w-full'>Assine Agora</Button>
         </CardFooter>
       </Card>
 
       </section>
 
-      <section className="bg-white">
-        <h2>Pronto Para Mudar a Sua Vida?</h2>
-        <p>Faça como milhares de outras pessoas. Assine nosso produto e tenha garantido seus estudos</p>
-        <Button type="submit">Assine Agora</Button>
-        <p>Comece sua assinatura agora mesmo. Cancele quando quiser.</p>
+      <section className="py-16 text-center">
+        <h2 className="text-5xl font-bold mt-16 pb-20">Pronto Para Mudar a Sua Vida?</h2>
+        <p className='text-gray-500 text-xl max-w-3xl mx-auto '>Faça como milhares de outras pessoas. Assine nosso produto e tenha garantido seus estudos</p>
+        <Button type="submit" className='mt-14 mx-auto w-96'>Assine Agora</Button>
+        <p className='text-xs text-muted-foreground mt-2'>Comece sua assinatura agora mesmo. Cancele quando quiser.</p>
 
-        <footer>
-          <Image src={logo} alt="logo-LivroSaaS" />
-          <p>2024 LivrosSaaS. Todos os direitos reservados.</p>
+        <footer className='mt-16 border-t border-gray-300 pt-10'>
+          <Image src={logo} alt="logo-LivroSaaS" className='mx-auto' />
+          <p className='text-xs text-muted-foreground'>© 2024 LivroSaaS. Todos os direitos reservados.</p>
         </footer>
       </section>
 
