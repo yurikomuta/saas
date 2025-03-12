@@ -34,4 +34,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 To access the deploy [link](https://saas-indol-phi.vercel.app)
 Version 1.0
 
-##Project study 
+## Study project 
+codante (https://codante.io/)
